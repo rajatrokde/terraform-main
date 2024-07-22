@@ -7,6 +7,9 @@ resource "aws_instance" "website" {
               yum install -y nginx
               systemctl start nginx
               systemctl enable nginx
+              cd /usr/share/nginx/html
+              wget https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip
+
               EOF
 
   tags = {
