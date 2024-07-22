@@ -24,6 +24,6 @@ resource "aws_security_group" "demo-sg" {
   }
 
   tags = {
-    Name = "my_security_group"
+    Name = ""
   }
 }
